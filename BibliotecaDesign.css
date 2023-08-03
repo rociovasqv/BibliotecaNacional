@@ -1,0 +1,99 @@
+*{
+    font-family: 'Lucida Sans';
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+
+    background: url("Shelf\ book\ 1.jpg");
+}
+
+#libros{
+    background-color: #c2c29b;
+    padding: 30px;
+    margin: 50px;
+}
+
+#alumnos{
+    background-color: #c2c29b;
+    padding: 30px;
+    margin: 50px;
+}
+
+#prestamos{
+    background-color: #c2c29b;
+    padding: 30px;
+    margin: 50px;
+}
+
+#devoluciones{
+    background-color: #c2c29b;
+    padding: 30px;
+    margin: 50px;
+}
+
+h2{
+    font-family: 'Lucida Sans';
+}
+
+h1{
+    font-family: Georgia ;
+}
+
+.boxAlumnos{
+    background-color: #ecf0ef;
+    border-color: #babdbc;
+    border-radius: 10px;
+    box-shadow: 0.1em 0.1em 0.1em #7d807f;
+    
+    padding: 20px;
+    margin: 8px;
+
+    text-align:start;
+}
+
+
+.boxAlumnos:hover{
+    box-shadow: 0.1em 0.1em 0.1em;
+}
+
+.boxLibros{
+    background-color: #ecf0ef;
+    border-color: #babdbc;
+    border-radius: 10px;
+    box-shadow: 0.1em 0.1em 0.1em #7d807f;
+
+    padding: 20px;
+    margin: 8px;
+
+    text-align:start;
+}
+
+.boxLibros:hover{
+    box-shadow: 0.1em 0.1em 0.1em;
+}
+
+ header > center > h2{
+    transform: translateY(-10%);
+    animation: floater 1.5s infinite;
+    transition: ease 1s;
+}
+
+@keyframes floater {
+    0%{transform: translateY(-10%);transition: ease 5s;}
+    50%{transform: translateY(10%);transition: ease 5s;}
+  }
+
+footer{
+    background-color: #6bb1d4;
+    padding: 20px;
+
+    text-align: center;
+    text-shadow: 0.01em 0.01em;
+    font-weight: bolder;
+    font-size: smaller;
+
+}

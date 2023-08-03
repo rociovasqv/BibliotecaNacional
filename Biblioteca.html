@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+    <link rel="stylesheet" href="BibliotecaDesign.css">
+    <script src="app.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div id="container">
+
+        <header>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a2d9ff" fill-opacity="1" d="M0,224L80,197.3C160,171,320,117,480,112C640,107,800,149,960,181.3C1120,213,1280,235,1360,245.3L1440,256L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+
+            <center>
+                <h1 style="font-family: 'Times New Roman'; font-size: 50px ;">Biblioteca Nacional</h1>
+                <img src="BibliotecaNac.png">
+                <h2>¡Bienvenido a la página oficial de la biblioteca!</h2>
+            </center>
+            <br><br>
+        </header>
+
+        <main>
+            <!-- Libros-->
+            <div id="libros">
+                
+                <h2>Libros</h2>
+
+                <label for="tit">Título:</label>
+                <input type="text" id="tit">
+
+                <br><br>
+
+                <label for="autor">Autor/a:</label>
+                <input type="text" id="author">
+
+                <br><br>
+
+                <!----Botones de libros -->
+                <button id="agrgL" onclick="agregarL()">Guardar</button>
+                <button id="actualL" onclick="actualL()">Actualizar</button>
+                
+                <br><br>
+                
+                <div id="listLibros"></div>
+
+                <hr>
+
+            </div>
+            
+            <!-- Alumnos-->
+            <div id="alumnos">
+                <h2>Alumnos</h2>
+
+                <label for="nom">Nombre:</label>
+                <input type="text" id="nombre">
+                <br><br>
+
+                <label for="dni">DNI:</label>
+                <input type="number" id="dniAlum">
+                <br><br>
+
+                <label for="direc">Dirección: </label>
+                <input type="text" id="direccion">
+                <br><br>
+
+                <!----Botones de Alumnos -->
+                <button id="agrgAlum" onclick="agrgAlumno()">Agregar</button>
+                <button id="actualAlum" onclick="actualAlumno()">Editar</button>
+                
+                <br><br>
+               <div id="mostrarAlum"></div>
+            
+                <br>
+                <hr>
+
+            </div>
+
+            <!-- Prestamos-->
+            <div id="prestamos">
+                <h2>Préstamos</h2>
+                
+                <label for="libroId">Libro:</label>
+                <select id="libroSelec"></select>
+                <br><br>
+
+                <label for="alumId">Nombre:</label>
+                <select id="alumSelec"></select>
+                <br><br>
+
+                <label for="fchaEntg">Fecha de entrega:</label>
+                <input type="date" id="fechaEntrega">
+                <br><br>
+
+                <label for="fchaDev">Fecha de devolución:</label>
+                <input type="date" id="fechaDev">
+                <br><br>
+                
+                <button id="agrgPrestamo" onclick="agrgPrestamo()">Agregar</button>
+                <br><br>
+
+                <div id="listPrestamos"></div>
+
+            </div>
+
+            <div id="devoluciones">
+                <h2>Devoluciones</h2>
+                <br>
+                <div id="listDev"></div>
+
+            </div>
+        </main>
+
+        <footer>
+
+            <p>Created by Rocío Vasquez Vargas</p>
+            <p>Tecnicatura Universitaria en Programación - FRT-UTN 2022</p>
+            
+        </footer>
+
+        </div>
+
+</body>
+</html>

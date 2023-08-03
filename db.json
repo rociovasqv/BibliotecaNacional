@@ -1,0 +1,48 @@
+{
+  "libros": [
+    {
+      "titulo": "El platero y yo",
+      "autor": "J.S. Rowling",
+      "id": 1
+    },
+    {
+      "titulo": "Los Juegos del Hambre",
+      "autor": "Collins",
+      "id": 2
+    },
+    {
+      "titulo": "Cuentos Completos",
+      "autor": "Edgan Poe",
+      "id": 3
+    }
+  ],
+  "alumnos": [
+    {
+      "nombre": "Juan Alejandro Diaz",
+      "dni": "434323284",
+      "direccion": "barrio 507 viviendas",
+      "id": 1
+    },
+    {
+      "nombre": "María Herrera",
+      "dni": "4566723",
+      "direccion": "Jujuy 5",
+      "id": 2
+    },
+    {
+      "nombre": "Rocío Vasquez",
+      "dni": "42796963",
+      "direccion": "Guemes 22",
+      "id": 3
+    }
+  ],
+  "prestamos": [
+    {
+      "librosid": "1",
+      "alumnosid": "1",
+      "fechaEntrega": "2023-05-01",
+      "fechaDevolucion": "2023-05-08",
+      "id": 1
+    }
+  ]
+}
